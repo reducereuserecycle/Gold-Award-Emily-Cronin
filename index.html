@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+      /* BUTTON GROUP (DIDN'T WORK AS WELL AS NAVBAR)/
+        .btn-group button {
+        background-color: #ffffff; / Green background /
+        border: 1px solid green; / Green border /
+        color: black; / White text /
+        padding: 10px 24px; / Some padding /
+        cursor: pointer; / Pointer/hand icon /
+        float: center; / Float the buttons side by side /
+      }
+
+      / Clear floats (clearfix hack) /
+      .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
+      / Add a background color on hover /
+      .btn-group button:hover {
+        background-color: #e1e6e2;
+      } */
+
+        /* STICKY BAR */
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        border: 1px solid #000;
+      }
+
+      .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #5d5f61;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #000000
+        color: black;
+      }
+
+      .topnav-centered a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .topnav-right {
+        float: right;
+      }
+
+      /* Responsive navigation menu (for mobile devices) */
+      @media screen and (max-width: 600px) {
+        .topnav a, .topnav-right {
+          float: none;
+          display: block;
+        }
+
+        .topnav-centered a {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+      }
+
+
+      /* TOP SCROLL BUTTON */
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #c9f5ff;
+        color: black;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- LEFT ALIGNED LINKS -->
+      <a class="active" href="index.html">Home</a>
+      <a href="index2facts.html">Fun Facts</a>
+      <a href="index3compostgame.html">Composting</a>
+      <a href="index4recyclegame.html">Recycling</a>
+      <a href="index5crafts.html">Crafts</a>
+
+      <!-- RIGHT ALIGNED LINKS -->
+      <div class="topnav-right">
+        <a href="index6about.html">About</a>
+        <a href="index7FAQ.html">FAQs</a>
+      </div>
+    </div>
+
+    <!-- LEFT ALIGNED NAVBAR -->
+    <!--<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="index2facts.html">Fun Facts</a>
+  <a href="index3compostgame.html">Composting</a>
+  <a hreft="index4recyclegame.html">Recycling</a>
+  <a href="index5crafts.html">Crafts</a>
+  <a href="index6about.html">About</a>
+</div>-->
+
+    <h1><center>Learn About Composting and Recycling!</center></h1>
+
+    <hr width="1200" />
+
+    <!--  <div class="btn-group" style="text-align:center;">
+    <button><a href = "index.html" > Home </a> </button>
+    <button><a href = "index2facts.html" > Fun Facts </a> </button>
+    <button><a href = "index3compostgame.html" > Composting Game </a> </button>
+    <button><a href = "index4recyclegame.html"> Recycling Game </a></button>
+    <button><a href = "index5crafts.html" > Crafts </a> </button>
+    <button><a href = "index6about.html"> About </a> </button>
+  </div> -->
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <h4 class="paragraph">
+      <center>
+        Have you ever been interested in learning the basics of composting
+        and/or recycling? Well this is the website for you! Learn what you
+        can<br />
+        and can't compost/recycle through interactive games and tons of fun
+        facts. Click on the buttons at the top of the screen to start<br />
+        learning, or scroll down to learn more about why you should start
+        composting and recycling at your own home!<br /><br />
+      </center>
+    </h4>
+
+    <h5 class="paragraph">
+      <center>
+        <h2><center>Why You Should Be Composting</center></h2>
+        First of all, a compost is made up of dirt, worms, and compostable
+        materials such as fruit scraps, newspaper<br />
+        strips, and coffee grinds. The worms work as decomposers to break the
+        materials down into dirt.<br /><br /><br />
+        When you throw something into the trash, you're doing more damage to
+        Earth than you think. That one piece of trash<br />
+        is thrown into one of the 245 million landfills in the world. Not only
+        are the ongoing piles of trash taking up land, but<br />
+        they are also ruining our Earth's environment. Through harmful toxins
+        and gases, the world's air and soil are becoming<br />
+        highly polluted. About 24% of trash in those landfills could have been
+        composted.<br /><br /><br />
+
+        Composting just even at your own home spares the creation of even more
+        landfill pollution. By doing your simple part with<br />
+        home composting, you can help make the earth a cleaner place. Instead of
+        your "trash" sitting in a harmful landfill, it can be in a<br />
+        compost at your house where it can be mixed around in a beneficial way.
+        The landfill environment produces methane gas<br />
+        due to stationary waste, whereas composts do not.
+        <br /><br />
+
+        <!--BIGGER SCREEN
+        <div style="text-align:center;">
+          <iframe
+            width="500"
+            height="400"
+            class="video"
+            src="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FComposting%20Video%20(1).MP4?v=1596668168672"
+          >
+          </iframe>
+        </div>-->
+
+        <video id="video" width="500" height="300" controls>
+          <source
+            src="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FComposting%20Video%20(1).MP4?v=1596668168672"
+            type="video/mp4"
+          />
+        </video>
+
+        <br /><br /><br />
+        <hr width="1200" />
+
+        <br />
+        <h2><center>Why You Should Be Recycling</center></h2>
+        Recyclable items are used by people in your house everyday. Those
+        unaware of recycling simply just put such<br />items into the trash bin.
+        This is harmful to the environment because all of those objects go
+        straight to landfills,<br />rather than to a center where they can be
+        shipped off to be repurposed. <br /><br /><br />
+
+        The major issue with landfills is that a whopping 80% of items being put
+        in today's landfills could have been<br />recycled. Around 75% of the
+        items Americans use are recyclable, however we unfortunately only
+        recycle about 30%<br />currently. With more houses participating in
+        recycling, the numbers of items being thrown in landfills can
+        significantly decrease.<br />Having a recycling bin inside your house is
+        an easy way to beome more environmentally friendly!
+      </center>
+    </h5>
+  </body>
+</html>
