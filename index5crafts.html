@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <style>
+
+      /* STICKY BAR */
+      body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      background-color: #ffffff;
+      border: 1px solid #000;
+    }
+
+    .topnav a {
+      float: left;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #5d5f61;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #000000
+      color: black;
+    }
+
+    .topnav-centered a {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .topnav-right {
+      float: right;
+    }
+
+    /* Responsive navigation menu (for mobile devices) */
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav-right {
+        float: none;
+        display: block;
+      }
+
+      .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+
+
+        /* TOP SCROLL BUTTON */
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #c9f5ff;
+      color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+    }
+  </style>
+
+  <head>
+    <title>Crafts Page</title>
+    <link rel="stylesheet" href="style5.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- LEFT ALIGNED LINKS -->
+      <a class="active" href="index.html">Home</a>
+      <a href="index2facts.html">Fun Facts</a>
+      <a href="index3compostgame.html">Composting</a>
+      <a href="index4recyclegame.html">Recycling</a>
+      <a href="index5crafts.html">Crafts</a>
+
+      <!-- RIGHT ALIGNED LINKS -->
+      <div class="topnav-right">
+        <a href="index6about.html">About</a>
+        <a href="index7FAQ.html">FAQs</a>
+      </div>
+    </div>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <h1>
+      <center>
+        Reusable Item Crafts!
+      </center>
+    </h1>
+
+    <hr width="1000" />
+
+    <h3 id="headone">
+      <center>
+        <br />
+        Reusable Household Items
+      </center>
+    </h3>
+
+    <center>
+      <table>
+        <tr class="reusableitems">
+          <ul>
+            <td><li>Newspapers</li></td>
+            <td><li>Paper Towel Rolls</li></td>
+            <td><li>Toilet Paper Rolls</li></td>
+            <td><li>Bottle Caps</li></td>
+          </ul>
+        </tr>
+
+        <tr class="reusableitems">
+          <ul>
+            <td><li>Candy Wrappers</li></td>
+            <td><li>Straws</li></td>
+            <td><li>Shoe Boxes</li></td>
+            <td>
+              <li>T-Shirts<br /></li>
+            </td>
+          </ul>
+        </tr>
+
+        <tr class="reusableitems">
+          <ul>
+            <td><li>Egg Cartons</li></td>
+            <td><li>Old Crayons</li></td>
+            <td><li>Dryer Lint</li></td>
+            <td><li>Cereal Boxes</li></td>
+          </ul>
+        </tr>
+
+        <tr class="reusableitems">
+          <ul>
+            <td><li>Plastic Grocery Bags</li></td>
+            <td><li>Yarn</li></td>
+            <td><li>Old Toothbrushes</li></td>
+            <td>
+              <li>Duct Tape <br /></li>
+            </td>
+          </ul>
+        </tr>
+      </table>
+    </center>
+
+    <br /><br />
+    <hr width="1400" />
+    <br />
+
+    <h5>
+      <center>
+        <h2><center>Craft Video Tutorial Links / Ideas</center></h2>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Newspaper:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Rolled Bracelet:
+                  <a href="https://www.youtube.com/watch?v=vHEsLPXQvvk">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Boxed Bracelet:
+                  <a href="https://www.youtube.com/watch?v=DKCyEMUHEhY">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td><li>Wrapping Paper</li></td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Toilet Paper / Paper Towel Cores:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Maracas / Shakers:
+                  <a href="https://www.youtube.com/watch?v=w7xJ7YUl3g0">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Fun Animals / Item Holders:
+                  <a href="https://www.youtube.com/watch?v=jqb_RuuWVWI">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Bottle Caps:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Fun Animals:
+                  <a href="https://www.youtube.com/watch?v=Bxoq7Kpa4V8">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Candy Wrappers:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Necklace:
+                  <a href="https://www.youtube.com/watch?v=94BPztaLC6I">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Decorative Flowers:
+                  <a href="https://www.youtube.com/watch?v=Eqm9uWV-g5o">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Straws:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Decorative Flowers:
+                  <a href="https://www.youtube.com/watch?v=RusMTYSoyMk">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Old T-Shirts:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Bag:
+                  <a href="https://www.youtube.com/watch?v=zgpaM3u2zng">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Pillow:
+                  <a href="https://www.youtube.com/watch?v=AEp338eSyDM">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Egg Cartons / Old Crayons / Dryer Lint:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Fun Animals:
+                  <a href="https://www.youtube.com/watch?v=TfoTamfkw2k">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Fire Starters:
+                  <a href="https://www.youtube.com/watch?v=_LF46fTV9TY">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Yarn / Old Toothbrushes:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Towel Holder:
+                  <a href="https://www.youtube.com/watch?v=SFxS3a8fw4M">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+
+        <h3 class="craft">
+          <center>
+            <br />
+            Duct Tape:
+          </center>
+        </h3>
+
+        <table>
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Wallet:
+                  <a href="https://www.youtube.com/watch?v=nOYfAXX0GwQ">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+
+          <tr class="craftlist">
+            <ul>
+              <td>
+                <li>
+                  Bracelet:
+                  <a href="https://www.youtube.com/watch?v=qo1qeDYVzUw">
+                    Video Link
+                  </a>
+                </li>
+              </td>
+            </ul>
+          </tr>
+        </table>
+      </center>
+    </h5>
+  </body>
+</html>
