@@ -1,0 +1,42 @@
+/* FAQS */
+body {
+  background-color: rgba(37, 217, 73, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 35px;
+}
+
+hr {
+  border-color: #000000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h5 {
+  background-color: #ffffff;
+  text-align: left;
+  height: 1050px;
+  border-radius: 30px;
+  border-style: groove;
+  border-radius: 30px;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+}
