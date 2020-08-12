@@ -1,0 +1,56 @@
+/* CRAFTS */
+body {
+  background-color: rgba(37, 217, 73, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 35px;
+}
+
+hr {
+  border-color: #000000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h5 {
+  background-color: #ffffff;
+  text-align: center;
+  height: 1600px;
+  border-style: groove;
+  border-radius: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Noto Serif", serif;
+}
+
+.craft {
+  font-size: 23px;
+  font-family: "Lora", serif;
+}
+
+#headone {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.reusableitems {
+  font-size: 20px;
+}
+
+.craftlist {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
