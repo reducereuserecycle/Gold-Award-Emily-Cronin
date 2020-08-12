@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Fun Facts Page </title>
+    <title>Composting Game Page</title>
     <style>
-  
+
       /* STICKY BAR */
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      .navbar {
+      .topnav {
         position: relative;
         overflow: hidden;
         background-color: #ffffff;
         border: 1px solid #000;
       }
 
-        .navbar a {
+      .topnav a {
         float: left;
         color: #000000;
         text-align: center;
@@ -26,12 +26,12 @@
         font-size: 17px;
       }
 
-      .navbar a:hover {
+      .topnav a:hover {
         background-color: #5d5f61;
         color: white;
       }
 
-      .navbar a.active {
+      .topnav a.active {
         background-color: #000000
         color: black;
       }
@@ -53,7 +53,7 @@
         .topnav a, .topnav-right {
           float: none;
           display: block;
-        }
+      }
 
         .topnav-centered a {
           position: relative;
@@ -63,45 +63,8 @@
         }
       }
 
-        .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        }
 
-        .sticky + .content {
-        padding-top: 60px;
-        }  
-
-
-      /*COLUMNS*/
-      {
-              box-sizing: border-box;
-          }
-          /* Set additional styling options for the columns*/
-          .column {
-          float: left;
-          width: 50%;
-          height:480px;
-          background-color: #ffffff;
-          text-align: center;
-          }
-
-          .column2 {
-          float:left;
-          width: 50%;
-          height: 620px;
-          background-color: #ffffff;
-          text-align: center;
-          }
-
-          .row:after {
-          content: "";
-          display: table;
-          clear: both;
-          }
-
-        /* TOP SCROLL BUTTON */
+      /* TOP SCROLL BUTTON */
 
       #myBtn {
         display: none;
@@ -122,183 +85,85 @@
       #myBtn:hover {
         background-color: #555;
       }
+    </style>
 
-      </style>
-  
-  
-    <link rel = "stylesheet" href = "style2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css" />
+
+    <!-- import the p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+
+    <script src="/script1compostgame.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  
-<body>
-  
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  
-<!-- Top navigation -->
-<div class="navbar">
-  
-  <!-- LEFT ALIGNED LINKS -->
-  <a class="active" href="index.html">Home</a>
-  <a href="index2facts.html">Fun Facts</a>
-  <a href="index3compostgame.html">Composting</a>
-  <a href="index4recyclegame.html">Recycling</a>
-  <a href="index5crafts.html">Crafts</a>
-  
-  <!-- RIGHT ALIGNED LINKS -->
-  <div class="topnav-right">
-    <a href="index6about.html">About</a>
-    <a href="index7FAQ.html">FAQs</a>
-  </div>
-</div>
-  
-  <script>
-  //Get the button
-var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- LEFT ALIGNED LINKS -->
+      <a class="active" href="index.html">Home</a>
+      <a href="index2facts.html">Fun Facts</a>
+      <a href="index3compostgame.html">Composting</a>
+      <a href="index4recyclegame.html">Recycling</a>
+      <a href="index5crafts.html">Crafts</a>
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-  </script>
-  
-  <h1> <center> Fun Facts! </center> </h1>
-  
-  <hr width="1000">
-  
-  
-  <center>
-  <h6><b>*</b>Printable Guides</h6>
-  <a href="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FComposting%20Guide.pdf?v=1596834319831">
-  <img src="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FCompostingGuidePic.JPG?v=1596835273677"
-          width="335"
-          height="455"
-        /></a>
-  <a href="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FRecycling%20Guide.pdf?v=1596834330117">
-  <img src="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FRecyclingGuidePic.JPG?v=1596835263813"
-          width="335"
-          height="455"
-        /></a>
-  <a href="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2Fclassroom%20worm%20bin%20teacher%20manual.pdf?v=1597254063508">
-  <img src="https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2FHowToCompost.JPG?v=1597254283792"
-           width="335"
-           height="455"
-         /></a>
-  </center><br>
-  
-  
-  <h3> <center> ~Composting DO'S and DONT'S~ </center> </h3>
-  
-  
-  <div class="row"> <center>
-    
-        <div class="column" style="background-color:#ffffff;">
-          <h2 class = "color1"> <center> <u> DO Compost </u> </center> </h2>
-            <p>
-              <ul>
-                <li class = "columnfont"> newspaper strips and paper egg cartons</li><br>
-                <li class = "columnfont"> clothing made with biodegrable materials like cotton, silk, and wool</li><br>
-                <li class = "columnfont"> fruit pits from magos, avocados, peaches, plums, etc.</li><br>
-                <li class = "columnfont"> tea leaves and coffee grinds</li><br>
-                <li class = "columnfont"> fallen leaves, pine needles, twigs, newspaper strips, plastic egg<br>cartons and dryer lint<b>*</b></li><br><br><br>
-              </ul>
-          </p>
-    
-    
-          <h4>* (These are what you call "brown material." Brown material is dry or woody plant based material that is essential to a healthy
-            compost bin because it assits in the overall fast break down of the compost.)</h4>
-        </div>
-    
-    
-    
-        <div class="column" style="background-color:#ffffff;">
-          <h2 class = "color2"> <center> <u> DO NOT Compost </u> </center> </h2>
-          <p>
-            <ul>
-                <li class = "columnfont"> acidic foods such as lemons, oranges, limes, and onions</li><br>
-                <li class = "columnfont"> milk and meat products such as chicken, salmon, bacon, butter, and cheese<b>*</b></li><br>
-                <li class = "columnfont"> plastic items like food wrappers, plastic bags, and plastic water bottles</li><br>
-                <li class = "columnfont"> greasy foods such as chips, fries, and sausage<b>*</b></li><br>
-                <li class = "columnfont"> pet waste from cats and dogs</li><br>
-                <li class = "columnfont"> bread products including cakes, pasta and baked goods</li><br><br>
-            </ul>
-          </p>
-    
-          <h4>* (All products that are either milk-based, made up of meat, or  considered greasy should never be put in composts.  This is due to them
-            attracting unwanted pests that could<br>harm your worms and/or the nutrients inside your bin.)</h4>
-        </div>
-    
-  </center></div>
+      <!-- RIGHT ALIGNED LINKS -->
+      <div class="topnav-right">
+        <a href="index6about.html">About</a>
+        <a href="index7FAQ.html">FAQs</a>
+      </div>
+    </div>
 
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
 
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
 
- <br> <h3> <center> ~Recycling DO'S and DONT'S~ </center> </h3>
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
-<div class="row"> <center>
-    
-        <div class="column2" style="background-color:#ffffff;">
-          <h2 class = "color1"> <center> <u> DO Recycle </u> </center> </h2>
-            <p>
-              <ul>
-                <li class = "columnfont"> ketchup, mustard, peanut butter, and mayo containers<b>*</b></li><br>
-                <li class = "columnfont"> glass items like jelly/jam containers, soda bottles, and dressing bottles*</li><br>
-                <li class = "columnfont"> aluminum soda cans and clean aluminum foil<b>*</b></li><br>
-                <li class = "columnfont"> paper towel and toilet paper cores</li><br>
-                <li class = "columnfont"> plastic water bottles<b>**</b></li><br>
-                <li class = "columnfont"> milk, juice, and yogurt containers<b>*</b></li><br>
-                <li class = "columnfont"> cardboard and printer/lined paper</li><br><br><br>
-              </ul>
-            </p>
-  
-          <h4>* (Before recycling anything make sure there is a recycling triangle on the bottom of your item.  Even though you may know it's recyclable,
-            it's a good habit to have.  Not only<br>that, but all containers must be rinsed out before recycled.)</h4>
-  
-          <h4>** (Instead of using a disposable plastic water bottle everyday you can use a reusable<br>water bottle. Even though plastic water bottles
-            are recyclable, many still don't<br>get reused, and end up in the landfill anyway.)</h4>
-        </div>
-    
-    
-    
-        <div class="column2" style="background-color:#ffffff;">
-          <h2 class = "color2"> <center> <u> DO NOT Recycle </u> </center> </h2>
-          <p>
-            <ul>
-                <li class = "columnfont"> toilet paper, paper towels, tissues</li><br>
-                <li class = "columnfont"> clothing and loose fabric</li><br>
-                <li class = "columnfont"> food wrappers, bubble wrap, styrofoam, and plastic bags<b>*</b></li><br>
-                <li class = "columnfont"> batteries, dishes, lightbulbs, and mirrors<b>**</b></li><br>
-                <li class = "columnfont"> plastic or wooden toys<b>*</b></li><br>
-                <li class = "columnfont"> electronics</li><br>
-                <li class = "columnfont"> leftover food</li><br><br><br>
-            </ul>
-          </p>
-  
-          <h4>* (Just because something is made out of plastic doesn't mean it's recyclable. Plastic<br>water bottles, not food wrappers, bubble wrap,
-            plastic bags, or plastic toys, are<br>the only type of plastic you can recycle.)</h4>
-  
-          <h4>** (Not all glass items are recyclable.  Glass food containers can only be recycled if they<br>have a recycling triangle on the bottom.
-            Other glass items such as lightbulbs,<br>mirrors, etc., however, should never be put in the recycle bin.</h4>
-        </div>
+    <h1>
+      <center>
+        Worm Bin Game!
+      </center>
+    </h1>
 
-  </center></div>
+    <hr width="1000" />
 
-
-
-</body>
+    <h2>
+      <center>
+        Use your left and right arrow keys to move the worm towards the
+        compostable item.
+      </center>
+      <br />
+    </h2>
+  </body>
 </html>
