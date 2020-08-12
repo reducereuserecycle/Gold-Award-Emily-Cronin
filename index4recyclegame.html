@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recycling Game Page</title>
+    <style>
+
+        /* STICKY BAR */
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        position: relative;
+        overflow: hidden;
+        background-color: #ffffff;
+        border: 1px solid #000;
+      }
+
+      .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #5d5f61;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #000000
+        color: black;
+      }
+
+      .topnav-centered a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .topnav-right {
+        float: right;
+      }
+
+      /* Responsive navigation menu (for mobile devices) */
+      @media screen and (max-width: 600px) {
+        .topnav a, .topnav-right {
+          float: none;
+          display: block;
+        }
+
+        .topnav-centered a {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+      }
+
+
+            /* TOP SCROLL BUTTON */
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #c9f5ff;
+        color: black;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style4.css" />
+
+    <!-- import the p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="/sound.js"></script>
+
+    <script src="/script2recyclegame.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- LEFT ALIGNED LINKS -->
+      <a class="active" href="index.html">Home</a>
+      <a href="index2facts.html">Fun Facts</a>
+      <a href="index3compostgame.html">Composting</a>
+      <a href="index4recyclegame.html">Recycling</a>
+      <a href="index5crafts.html">Crafts</a>
+
+      <!-- RIGHT ALIGNED LINKS -->
+      <div class="topnav-right">
+        <a href="index6about.html">About</a>
+        <a href="index7FAQ.html">FAQs</a>
+      </div>
+    </div>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <h1>
+      <center>
+        Recycling Bin Game!
+      </center>
+    </h1>
+
+    <hr width="1000" />
+
+    <h2>
+      <center>
+        Help clean up the beach by clicking on the bin that the trash/recyclable
+        item belongs to.<br />You have one minute to move as many items as you
+        can into their correct bin!
+      </center>
+    </h2>
+
+    <!-- <center><div id="timer"></div></center><br> -->
+  </body>
+</html>
