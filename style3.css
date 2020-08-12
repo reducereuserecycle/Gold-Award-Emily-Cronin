@@ -1,0 +1,42 @@
+/* COMPOSTING */
+body {
+  background-color: rgba(37, 217, 73, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 35px;
+}
+
+hr {
+  border-color: #000000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 30;
+  bottom: 20;
+  left: 0;
+  right: 0;
+}
