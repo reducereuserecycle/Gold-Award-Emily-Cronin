@@ -14,14 +14,6 @@ var trash = [];
 var trashindex;
 var NaturalPause;
 var coinflip;
-let mySound;
-
-
-function preload() {
-  //soundFormats('mp3', 'ogg');
-  mySound = loadSound('https://cdn.glitch.com/0e5db94f-2a9c-481a-ba2f-6b919eaaacdf%2Fpositive_tone.mp3?v=1596656664574');
-  
-}
 
 
 function setup() {
@@ -194,7 +186,6 @@ function runGame() {
           if(coinflip == 0){
             score ++;
             correct ++;
-            //mySound.play();
           }
           else{
             score --;
@@ -212,7 +203,6 @@ function runGame() {
           else{
             score ++;
             correct ++;
-            //mySound.play();
           }
           GameContext = 2;
           NaturalPause = 10;
